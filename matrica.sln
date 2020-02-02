@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrica", "matrica\matrica.csproj", "{AFD56AA9-68D4-4D0E-95DC-E4B45DA15E3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFD56AA9-68D4-4D0E-95DC-E4B45DA15E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD56AA9-68D4-4D0E-95DC-E4B45DA15E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD56AA9-68D4-4D0E-95DC-E4B45DA15E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD56AA9-68D4-4D0E-95DC-E4B45DA15E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5848CF1A-7DD6-42F0-AB14-B589DBCC141B}
+	EndGlobalSection
+EndGlobal
