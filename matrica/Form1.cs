@@ -15,7 +15,7 @@ namespace matrica
         TextBox[,] matrix_vis1;
         TextBox[,] matrix_vis2;
         TextBox[,] matrix_vis3;
-
+        Matrix matrix1, matrix2, matrix3, matrix4, matrix5;
         int default_size = 5;
 
 
@@ -49,19 +49,97 @@ namespace matrica
 
             int[,] numbers2 = new int[default_size, default_size];
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            matrix1 = new Matrix(5, 5, 0, 11);
+          
+            show_numbers(matrix_vis1, matrix1.numbers);
+           
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            matrix3 = new Matrix(5, 5, 0, 0);
+            sum(matrix1,  matrix2, matrix3);
+            show_numbers(matrix_vis3, matrix3.numbers);
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            matrix2 = new Matrix(5, 5, 0, 11);
+            show_numbers(matrix_vis2, matrix2.numbers);
+        }
+
         private void show_numbers(TextBox[,]matrix, int[,] numbers)
         {
+
             for(int i = 0; i < matrix.GetLength(0); i++)
             {
                 for(int j = 0; j < matrix.GetLength(1); j++)
                 {
                     matrix[i, j].Text = numbers[i, j].ToString();
+
                 }
             }
         }
 
-        private void init_form()
+        private void Button5_Click(object sender, EventArgs e)
         {
+            matrix5 = new Matrix(5, 5, 0, 0);
+            com(matrix1, matrix2, matrix5);
+            show_numbers(matrix_vis3, matrix5.numbers);
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            matrix4 = new Matrix(5, 5, 0, 0);
+            dif(matrix1, matrix2, matrix4);
+            show_numbers(matrix_vis3, matrix4.numbers);
+        }
+
+        private void sum(Matrix matrix1, Matrix matrix2, Matrix matrix3)
+        {
+            int[,] numbersP = new int[5, 5];
+            for(int i = 0; i < numbersP.GetLength(0); i++)
+            {
+                for (int j = 0; j < numbersP.GetLength(1); j++)
+                {
+                    matrix3.numbers[i, j] = matrix1.numbers[i, j] + matrix2.numbers[i, j];
+                }
+            }
+           
+        }
+
+        private void dif(Matrix matrix1, Matrix matrix2, Matrix matrix4)
+        {
+            int[,] numbersP = new int[5, 5];
+            for (int i = 0; i < numbersP.GetLength(0); i++)
+            {
+                for (int j = 0; j < numbersP.GetLength(1); j++)
+                {
+                    matrix4.numbers[i, j] = matrix1.numbers[i, j] - matrix2.numbers[i, j];
+                    
+                }
+            }
+
+        }
+
+        private void com(Matrix matrix1, Matrix matrix2, Matrix matrix3)
+        {
+            int n = 0;
+            matrix5 = new Matrix();
+            int[,] numbersP = new int[5, 5];
+            for (int i = 0; i < numbersP.GetLength(0); i++)
+            {
+                n = 0;
+                for (int j = 0; j < numbersP.GetLength(1); j++)
+                {
+                    matrix5.numbers[i, j] = matrix1.numbers[i, n] * matrix2.numbers[n, j];
+                    n++;
+                }
+            }
 
         }
     }

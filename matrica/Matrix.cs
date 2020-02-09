@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +8,7 @@ namespace matrica
 {
     class Matrix
     {
-        int[,] numbers;
+        public int[,] numbers;
         
         public Matrix(int i, int j)
         {

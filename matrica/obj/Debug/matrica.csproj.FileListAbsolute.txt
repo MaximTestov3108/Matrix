@@ -1,0 +1,10 @@
+C:\Users\OOP11\Desktop\Matrix\matrica\bin\Debug\matrica.exe.config
+C:\Users\OOP11\Desktop\Matrix\matrica\bin\Debug\matrica.exe
+C:\Users\OOP11\Desktop\Matrix\matrica\bin\Debug\matrica.pdb
+C:\Users\OOP11\Desktop\Matrix\matrica\obj\Debug\matrica.csprojAssemblyReference.cache
+C:\Users\OOP11\Desktop\Matrix\matrica\obj\Debug\matrica.Form1.resources
+C:\Users\OOP11\Desktop\Matrix\matrica\obj\Debug\matrica.Properties.Resources.resources
+C:\Users\OOP11\Desktop\Matrix\matrica\obj\Debug\matrica.csproj.GenerateResource.cache
+C:\Users\OOP11\Desktop\Matrix\matrica\obj\Debug\matrica.csproj.CoreCompileInputs.cache
+C:\Users\OOP11\Desktop\Matrix\matrica\obj\Debug\matrica.exe
+C:\Users\OOP11\Desktop\Matrix\matrica\obj\Debug\matrica.pdb
